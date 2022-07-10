@@ -1,0 +1,17 @@
+{
+    "name": "ai extension",
+    "short_name": "ai-ext",
+    "version": "0.0.2",
+    "description": "g-meet video automation based on presence of person",
+    "manifest_version": 2,
+    "content_security_policy": "script-src 'self' https://cdn.jsdelivr.net/npm/@tensorflow/tfjs https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface 'unsafe-eval'; object-src 'self' ",
+    "browser_action": {
+        "default_popup": "index.html",
+        "default_icon": "logo.png"
+    },
+
+    "permissions": [
+        "activeTab", "contextMenus", "tabs", "notifications", "desktopCapture", "tabCapture", "unlimitedStorage", "storage"
+    ]
+
+}
